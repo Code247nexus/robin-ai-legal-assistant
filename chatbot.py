@@ -200,4 +200,5 @@ if st.button("Get Response"):
                     audio_file = text_to_speech(response.content)
                     st.write("🔊 Listen to the response:")
                     play_audio(audio_file)
-                except Exception:
+                except Exception as e:
+                    print(e)
